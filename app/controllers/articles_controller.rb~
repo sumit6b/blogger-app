@@ -15,6 +15,10 @@ class ArticlesController < ApplicationController
 		@article = Article.new
 	end
 
+	def tag_list=(tags_string)
+
+	end
+
 	def create
 		@article = Article.new(article_params)
 		@article.save
